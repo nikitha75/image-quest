@@ -1,9 +1,15 @@
-import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
+import SearchForm from "./SearchForm";
+import Gallery from "./Gallery";
 
-function App() {
-  const [count, setCount] = useState(0);
-
-  return <>App</>;
-}
+const App = () => {
+  return (
+    <main>
+      <ThemeToggle />
+      <SearchForm />
+      <Gallery />
+    </main>
+  );
+};
 
 export default App;
