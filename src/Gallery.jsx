@@ -1,9 +1,20 @@
-import React from 'react'
+import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
+
+const url = import.meta.env.VITE_PHOTOS_URL;
 
 const Gallery = () => {
-  return (
-    <div>Gallery</div>
-  )
-}
+  const response = useQuery({
+    queryKey: ["images"],
+    queryFn: async () => {
+      const result = await axios.get(url);
 
-export default Gallery
+      return result.data;
+    },
+  });
+
+  console.log(response);
+  return <div>Gallery</div>;
+};
+
+export default Gallery;
