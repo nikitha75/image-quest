@@ -12,7 +12,7 @@ const SearchForm = () => {
 
   return (
     <section>
-      <h1 className="title">images</h1>
+      <h1 className="title">ImageQuest</h1>
       <form className="search-form" onSubmit={handleSubmit}>
         <input
           type="text"
