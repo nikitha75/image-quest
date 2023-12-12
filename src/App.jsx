@@ -5,6 +5,7 @@ import Gallery from "./Gallery";
 const App = () => {
   return (
     <main>
+      {/* <div className="logo">ImageQuest</div> */}
       <ThemeToggle />
       <SearchForm />
       <Gallery />
